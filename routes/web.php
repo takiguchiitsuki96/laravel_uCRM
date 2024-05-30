@@ -37,7 +37,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::resource('item', ItemController::class)
+Route::resource('items', ItemController::class)
 ->middleware(['auth', 'verified']);
 
 Route::get('/dashboard', function () {
